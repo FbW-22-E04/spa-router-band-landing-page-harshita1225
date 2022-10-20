@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div className="container">
       <div className="band-container">
-        <NavLink to="/home">
+        <NavLink to="/">
           <div className="logo">
             <img
               src="https://png.pngitem.com/pimgs/s/1-10366_heavy-fuckinmetal-from-hamburg-paragon-band-logo-hd.png"
@@ -57,7 +57,7 @@ const App = () => {
         </ul>
 
         <div className="img-container">
-          <img src={updateImg?.src} alt={artist} />
+          <img src={updateImg?.src || data[0].src} alt={artist} />
         </div>
       </div>
     </div>
